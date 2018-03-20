@@ -1,0 +1,17 @@
+# factor() 
+animal <- c('d','c','d','c','c')
+id <- c(1,2,3,4,5)
+factor(animal)
+fact.ani <- factor(animal)
+print(fact.ani)
+
+#Nominal Cat. variable (don't have any order)
+#Odinal cat. var. (have order)
+
+ord.cat <- c('cold','med','hot')
+temps <- c('cold','med','hot','hot','hot','cold','med')
+print(temps)
+fact.temp <- factor(temps,ordered = TRUE, levels = c('cold','med','hot'))
+print(fact.temp)
+summary(fact.temp)
+summary(temps)
